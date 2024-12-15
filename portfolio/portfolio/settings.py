@@ -82,9 +82,10 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 DATABASES = {
     "default": dj_database_url.parse(
-        os.environ.get("DATABASE_URL", "postgres://default_user:default_password@localhost:5432/default_db")
+        os.environ.get("DATABASE_URL", config("DATABASE_URL"))
     )
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
