@@ -28,7 +28,9 @@ SECRET_KEY = 'django-insecure-%=k10na*&(0un69$ofe1td&0$$f4sav^re=hj11b!zv9g(dre&
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'projects-api-pzc4.onrender.com'
+    'projects-api-pzc4.onrender.com',
+    '127.0.0.1',
+    'https://www.faresattallah.website/'
 ]
 
 
